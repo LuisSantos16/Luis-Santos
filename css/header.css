@@ -1,0 +1,44 @@
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-primary);
+    & span{
+        & h2{
+            letter-spacing: calc(var(--space-size) / 16);
+            color: var(--light-color);
+            font-size: calc(var(--font-size) * 1.75);
+            text-shadow: 0 0 calc(var(--font-size) * 0.625) var(--primary-color), 
+                         0 0 calc(var(--font-size) * 0.625) var(--primary-color),
+                         0 0 calc(var(--font-size) * 0.625) var(--primary-color);
+        }
+    }    
+
+    & nav{
+        display: flex;
+        & a{
+            text-decoration: none;
+            color: var(--light-color);
+            padding: calc(var(--space-size) * 2) calc(var(--space-size) * 1.25);
+            transition: var(--transition);
+            letter-spacing: calc(var(--space-size) / 16);
+            &:hover{
+                background-color: var(--bg-tertiary);
+            }
+        }
+    }
+    & ul{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        gap: calc(var(--space-size) * 1.25);
+        list-style: none;
+        & li{
+            & a{
+                text-decoration: none;
+                color: var(--light-color);
+            }
+        }
+    }
+}

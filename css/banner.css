@@ -1,0 +1,23 @@
+
+.container_banner{
+    background: linear-gradient(var(--bg-dark-transp),var(--bg-dark-transp)) ,url(../img/banner.jpeg);
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & figcaption{
+        width: 750px;
+        text-align: center;
+        color: var(--light-color);
+        display: grid;
+        gap: calc(var(--space-size) * 1.25);
+        & a{
+            color: var(--light-color);
+            text-decoration: none;
+        }
+    }
+}
