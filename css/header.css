@@ -4,19 +4,22 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: var(--bg-primary);
-    & span{
+    & .logo{
+        display: flex;
+        justify-content: center;
         & h2{
-            letter-spacing: calc(var(--space-size) / 16);
+            letter-spacing: calc(var(--space-size) * 0.125);
             color: var(--light-color);
-            font-size: calc(var(--font-size) * 1.75);
+            font-size: calc(var(--font-size) * 1.45);
             text-shadow: 0 0 calc(var(--font-size) * 0.625) var(--primary-color), 
                          0 0 calc(var(--font-size) * 0.625) var(--primary-color),
                          0 0 calc(var(--font-size) * 0.625) var(--primary-color);
         }
     }    
 
-    & nav{
+    & .navbar{
         display: flex;
+        justify-content: center;
         & a{
             text-decoration: none;
             color: var(--light-color);
@@ -28,17 +31,24 @@ header{
             }
         }
     }
-    & ul{
+    & .social-media{
         width: 200px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: calc(var(--space-size) * 1.25);
         list-style: none;
         & li{
             & a{
                 text-decoration: none;
                 color: var(--light-color);
+                font-size: calc(var(--font-size) * 0.875);
             }
         }
+    }
+}
+
+@media(max-width:1200px){
+    .social-media{
+        display: block;
     }
 }

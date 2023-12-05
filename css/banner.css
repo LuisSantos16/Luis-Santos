@@ -15,6 +15,12 @@
         color: var(--light-color);
         display: grid;
         gap: calc(var(--space-size) * 1.25);
+        & span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: calc(var(--space-size) * 0.625);
+        }
         & a{
             color: var(--light-color);
             text-decoration: none;
