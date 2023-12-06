@@ -92,7 +92,26 @@ header{
             width: 100%;
         }
          
-    }
+    }    
+}
 
-    
+@media(max-width:650px){
+    header{
+        padding: calc(var(--space-size) * 1.5);
+        & .logo{
+            & h2{
+                font-size: calc(var(--font-size) * 0.875);
+            }
+        }
+        & .navbar{
+            & a{
+                font-size: 13px;
+                padding: calc(var(--space-size) * 1.5);
+            }
+        }
+
+        #lista-barid{
+            font-size: calc(var(--font-size) * 0.975);
+        }
+    }
 }
