@@ -2,16 +2,19 @@
     --bg-primary:#161f2e;
     --bg-secondary:#1f2e4d;
     --bg-tertiary:#1d2c4b;
+    --bg-light:#fff;
     --bg-dark:#000;
     --bg-primary-transp:#161f2e8c;
     --bg-dark-transp:#000000a4;
     --primary-color:#2a9efd;
+    --secondary-color:#161f2e;
     --light-color:#fff;
     --dark-color:#000;
     --font-size:1rem;
     --space-size:1rem;
     --font-family:'Ubuntu', sans-serif;
     --transition:0.5s;
+    --border-radius_xl:3.125rem;
 }
 
 *{

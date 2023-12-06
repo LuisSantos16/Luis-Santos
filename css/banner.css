@@ -22,8 +22,45 @@
             gap: calc(var(--space-size) * 0.625);
         }
         & a{
-            color: var(--light-color);
+            background-color: var(--bg-light);
+            color: var(--dark-color);
             text-decoration: none;
+            width: 200px;
+            padding: 10px;
+            margin: auto;
+            border-radius: var(--border-radius_xl);
+            transition: var(--transition);
+            &:hover{
+                background-color: var(--primary-color);
+                color: var(--light-color);
+            }
+        }
+    }
+}
+
+@media(max-width:1200px){
+    .container_banner{
+        & figcaption{
+            width: 80%; 
+            & h1{
+                font-size: calc(var(--font-size) * 1.25);
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    .container_banner{
+        height: 60%;
+        & figcaption{
+            width: 90%;
+            & h3, p, a{
+                font-size: calc(var(--font-size) * 0.75);
+            } 
+            & h1{
+                font-size: var(--font-size);
+                line-height: calc(var(--space-size) * 1.5625);
+            }
         }
     }
 }

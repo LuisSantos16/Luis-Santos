@@ -106,7 +106,8 @@ header{
         & .navbar{
             & a{
                 font-size: 13px;
-                padding: calc(var(--space-size) * 1.5);
+                padding: calc(var(--space-size) * 1.2);
+                text-align: center;
             }
         }
 
