@@ -100,7 +100,7 @@ header{
         padding: calc(var(--space-size) * 1.5);
         & .logo{
             & h2{
-                font-size: calc(var(--font-size) * 0.875);
+                font-size: calc(var(--font-size) * 1.15);
             }
         }
         & .navbar{
@@ -112,7 +112,7 @@ header{
         }
 
         #lista-barid{
-            font-size: calc(var(--font-size) * 0.975);
+            font-size: calc(var(--font-size) * 1.15);
         }
     }
 }

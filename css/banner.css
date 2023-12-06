@@ -36,6 +36,12 @@
             }
         }
     }
+
+    #maquina-escribir3{
+        text-shadow: 0 0 calc(var(--font-size) * 0.625) var(--primary-color), 
+                     0 0 calc(var(--font-size) * 0.625) var(--primary-color),
+                     0 0 calc(var(--font-size) * 0.625) var(--primary-color);;
+    }
 }
 
 @media(max-width:1200px){
@@ -55,10 +61,10 @@
         & figcaption{
             width: 90%;
             & h3, p, a{
-                font-size: calc(var(--font-size) * 0.75);
+                font-size: calc(var(--font-size) * 0.85);
             } 
             & h1{
-                font-size: var(--font-size);
+                
                 line-height: calc(var(--space-size) * 1.5625);
             }
         }
