@@ -93,7 +93,7 @@
                 margin: auto;
             }
             & .sub_skills{
-                ul{
+                & ul{
                     list-style: none;
                     display: flex;
                     justify-content: space-between;
@@ -125,14 +125,44 @@
         padding: calc(var(--padding) * 2.5);
         & .content_about{
             width: 100%;
+            & h2{
+                font-size: calc(var(--font-size) * 1.5);
+            }
+            & p{
+                font-size: calc(var(--font-size) * 0.875);
+                line-height: calc(var(--space-size) * 1.75);
+            }
         }
     }
 
     .container_skills{
-        padding: calc(var(--padding) * 0.75);
+        & h2{
+            font-size: calc(var(--font-size) * 1.5);
+        }
+        padding: calc(var(--padding) * 2.5) calc(var(--padding) * 0.75) calc(var(--padding) * 0.25) calc(var(--padding) * 0.75);
         & .conta-skills{
+            gap: calc(var(--space-size) * 1.25);
             &  .skills{
                 width: 100%;
+                margin: 0;
+                gap: calc(var(--space-size) * 1.25);
+                padding: calc(var(--padding) * 2.5);
+                & h3{
+                    font-size: var(--font-size);
+                }
+                & hr{
+                    width: 80%;
+                }
+                & .sub_skills{
+                    & ul{
+                        justify-content: space-around;
+                        font-size: calc(var(--font-size) * 0.875);
+                    }
+                }
+                & p{
+                    font-size: calc(var(--font-size) * 0.875);
+                    line-height: calc(var(--space-size) * 1.75);
+                }
             }
         }
     }
