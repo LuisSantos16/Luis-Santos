@@ -75,10 +75,18 @@ header{
         }
 
         .cerrar{
-            display: block;
+            display: flex;
             color: white;
-            padding: 20px;
-            text-align: right;
+            padding: calc(var(--padding) / 1.16) calc(var(--padding) * 1.25);
+            margin: calc(var(--space-size) / 1.16);
+            width: 20px;
+            justify-content: center;
+            align-items: center;
+            align-self: flex-end;
+            border-radius: 50%;
+            border: 1px solid white;
+            font-size: var(--font-size);
+            font-weight: bold;
         }
 
         .lista-open{
@@ -106,9 +114,15 @@ header{
         & .navbar{
             & a{
                 font-size: 13px;
-                padding: calc(var(--space-size) * 1.2);
+                padding: calc(var(--space-size) * 1.75);
                 text-align: center;
             }
+        }
+
+        .cerrar{
+            align-self: center;
+            font-size: calc(var(--font-size) / 1.6);
+            padding: calc(var(--padding) / 3.2) calc(var(--padding) / 1.6);
         }
 
         #lista-barid{

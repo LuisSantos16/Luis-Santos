@@ -57,7 +57,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: calc(var(--space-size) * 2.5) 0px;
-        width: 100%;
+        margin: auto;
+        max-width: 1800px;
         &  .skills{
             width: 450px;
             background-color: var(--bg-primary);
@@ -135,7 +136,11 @@
 
 @media(max-width:650px){
     .container_about{
-        padding: calc(var(--padding) * 2.5);
+        padding: calc(var(--padding) * 1.5);
+        & .img_about{
+            padding: 0;
+            max-width: 100%;
+        }
         & .content_about{
             width: 100%;
             & h2{
