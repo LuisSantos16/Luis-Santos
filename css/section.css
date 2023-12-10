@@ -106,3 +106,34 @@
         }
     }
 }
+
+@media(max-width:1050px){
+    .container_about{
+        flex-direction: column;
+        gap: calc(var(--space-size) * 2.5);
+        & .content_about{
+            text-align: center;
+            & a{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    .container_about{
+        padding: calc(var(--padding) * 2.5);
+        & .content_about{
+            width: 100%;
+        }
+    }
+
+    .container_skills{
+        padding: calc(var(--padding) * 0.75);
+        & .conta-skills{
+            &  .skills{
+                width: 100%;
+            }
+        }
+    }
+}
