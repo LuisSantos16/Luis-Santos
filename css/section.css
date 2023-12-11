@@ -48,11 +48,27 @@
 
 .container_skills{
     background-color: var(--bg-secondary);
-    padding: var(--padding-height) 0 ;
-    & h2{
-        text-align: center;
-        color: var(--light-color);
-        font-size: calc(var(--font-size) * 2);
+    padding: var(--padding-height) 0;
+
+    & .letter_skills{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h2{
+            text-align: center;
+            color: var(--light-color);
+            position: absolute;
+            letter-spacing: calc(var(--space-size) / 8);
+            font-size: calc(var(--font-size) * 2.5);
+        }
+        & h4{
+            text-align: center;
+            color: var(--tertiary-color);
+            -webkit-text-stroke: 1px var(--bg-primary-transp);
+            font-size: calc(var(--font-size) * 6.25);
+        }
     }
     & .conta-skills{
         display: flex;
@@ -156,10 +172,16 @@
     }
 
     .container_skills{
-        & h2{
-            font-size: calc(var(--font-size) * 1.5);
-        }
         padding: calc(var(--padding) * 2.5) calc(var(--padding) * 0.75) calc(var(--padding) * 0.25) calc(var(--padding) * 0.75);
+        & .letter_skills{
+            overflow: hidden;
+            & h2{
+                font-size: calc(var(--font-size) * 1.5);
+            }
+            & h4{
+                font-size: calc(var(--font-size) * 3.5);
+            }
+        }
         & .conta-skills{
             gap: calc(var(--space-size) * 1.25);
             padding: calc(var(--padding) * 2.5) 0;

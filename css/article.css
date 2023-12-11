@@ -5,9 +5,25 @@
     display: grid;
     gap: calc(var(--space-size) * 2.5);
     color: var(--light-color);
-    & h2{
-        font-size: calc(var(--font-size) * 2.25);
-        text-align: center;
+    & .letter_portfolio{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h2{
+            text-align: center;
+            color: var(--light-color);
+            position: absolute;
+            letter-spacing: calc(var(--space-size) / 8);
+            font-size: calc(var(--font-size) * 2.5);
+        }
+        & h4{
+            text-align: center;
+            color: var(--secondary-color);
+            -webkit-text-stroke: 1px var(--bg-secondary-transp);
+            font-size: calc(var(--font-size) * 6.25);
+        }
     }
     & .conta_portfolio{
         display: flex;
@@ -51,11 +67,19 @@
     .container_portfolio{
         padding: calc(var(--padding) * 2.5) 0 calc(var(--padding) * 0.25) 0;
         gap: 0;
-         & h2{font-size: calc(var(--font-size) * 1.5);}
+        & .letter_portfolio{
+            overflow: hidden;
+            & h2{
+                font-size: calc(var(--font-size) * 1.5);
+            }
+            & h4{
+                font-size: calc(var(--font-size) * 3.5);
+            }
+        }
         & .conta_portfolio{
             gap: calc(var(--space-size) * 1.25);
             padding: calc(var(--padding) * 2.5) 0;
-            & .portfolio{width: 95%;}
+            & .portfolio{width: 90%;}
         }
     }
 }
