@@ -3,7 +3,10 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--bg-primary);
+    position: fixed;
+    min-width: 100%;
+
+    z-index: 4;
     & .logo{
         display: flex;
         justify-content: center;
@@ -71,12 +74,13 @@ header{
             display: block;
             float: right;
             font-size: calc(var(--font-size) * 1.5625);
-            color: white;
+            color: var(--light-color);
+            cursor: pointer;
         }
 
         .cerrar{
             display: flex;
-            color: white;
+            color: var(--light-color);
             padding: calc(var(--padding) / 1.16) calc(var(--padding) * 1.25);
             margin: calc(var(--space-size) / 1.16);
             width: 20px;
@@ -84,9 +88,10 @@ header{
             align-items: center;
             align-self: flex-end;
             border-radius: 50%;
-            border: 1px solid white;
+            border: calc(var(--padding) / 16) solid var(--light-color);
             font-size: var(--font-size);
             font-weight: bold;
+            cursor: pointer;
         }
 
         .lista-open{
@@ -113,7 +118,7 @@ header{
         }
         & .navbar{
             & a{
-                font-size: 13px;
+                font-size: calc(var(--font-size) * 0.75);
                 padding: calc(var(--space-size) * 1.75);
                 text-align: center;
             }

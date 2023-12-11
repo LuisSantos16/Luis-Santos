@@ -16,14 +16,28 @@ window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     let menudespegable = document.getElementById("listaid");
 
-    // Verifica la dirección del scroll
     if (prevScrollPos > currentScrollPos && menudespegable.classList.contains("lista-open")) {
-        // Muestra el menú si el scroll es hacia arriba y el menú está abierto
         menudespegable.classList.add("lista-open");
     } else {
-        // Oculta el menú si el scroll es hacia abajo
         menudespegable.classList.remove("lista-open");
     }
 
     prevScrollPos = currentScrollPos;
 };
+
+//scroll
+window.addEventListener("scroll",Scroll);
+function Scroll(){
+    let header=document.getElementById("header");
+    let posy=window.pageYOffset;
+    if (posy>100){
+        header.style.background="var(--bg-primary)";
+        header.style.transition="var(--transition)"
+        header.style.boxShadow="1px 1px 2px 2px var(--bg-light-transp)";
+    }
+    else{
+        header.style.background="none";
+        header.style.transition="var(--transition)";
+        header.style.boxShadow="none"
+    }
+}
