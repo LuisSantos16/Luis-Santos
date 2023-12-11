@@ -27,7 +27,7 @@
             color: var(--dark-color);
             text-decoration: none;
             width: 200px;
-            padding: 10px;
+            padding: calc(var(--padding) / 1.6);
             margin: auto;
             border-radius: var(--border-radius_xl);
             transition: var(--transition);
