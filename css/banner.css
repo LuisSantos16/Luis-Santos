@@ -58,7 +58,7 @@
 
 @media(max-width:650px){
     .container_banner{
-        height: 60%;
+        height: 80%;
         & figcaption{
             width: 90%;
             & h3, p, a{

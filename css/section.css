@@ -49,7 +49,6 @@
 .container_skills{
     background-color: var(--bg-secondary);
     padding: var(--padding-height) 0;
-
     & .letter_skills{
         position: relative;
         display: flex;
