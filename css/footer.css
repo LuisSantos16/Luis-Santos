@@ -103,8 +103,23 @@
 }
 
 
-@media(max-width:1050px){
+@media(max-width:650px){
     .container_footer{
-        padding: calc(var(--padding) * 1.5);
+        padding: calc(var(--padding) * 2.5) 15px;
+        & .conta_footer{
+            & .first_footer{
+                & h2{
+                    font-size: calc(var(--font-size) * 1.75);
+                }
+            }
+            & hr{
+                width: 100%;
+            }
+            & .second_footer{
+                & .acrostic_name{
+                    text-align: left;
+                }
+            }
+        }
     }
 }
