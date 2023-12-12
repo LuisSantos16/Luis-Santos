@@ -30,7 +30,7 @@ window.addEventListener("scroll",Scroll);
 function Scroll(){
     let header=document.getElementById("header");
     let posy=window.pageYOffset;
-    if (posy>100){
+    if (posy>50){
         header.style.background="var(--bg-primary)";
         header.style.transition="var(--transition)"
         header.style.boxShadow="1px 1px 2px 2px var(--bg-light-transp)";

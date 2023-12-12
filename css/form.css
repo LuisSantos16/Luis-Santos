@@ -32,12 +32,11 @@
     & .conta_form{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         background-color: var(--bg-secondary-transp);
-        max-width: 1250px;
+        width: 60%;
         margin: auto;
-        margin-top: calc(var(--space-size) * 2.5);
+        margin-top: calc(var(--space-size) * 3.25);
         padding: calc(var(--padding) * 2.5);
         & input,textarea{
             width: 100%;
@@ -64,6 +63,27 @@
                 background-color: var(--bg-primary);
                 color: var(--light-color);
             }
+        }
+    }
+}
+
+@media(max-width:1050px){
+    .container_form{
+        & .conta_form{width: 80%;}
+    }
+}
+
+@media(max-width:680px){
+    .container_form{
+        padding: calc(var(--padding) * 2.5) calc(var(--padding) * 0.45) calc(var(--padding) * 2.5) calc(var(--padding) * 0.45);
+        & .letter_form{
+            overflow: hidden;
+            & h2{font-size: calc(var(--font-size) * 1.5);}
+            & h4{font-size: calc(var(--font-size) * 3.5);}
+        }
+        & .conta_form{
+            width: 100%;
+            padding: calc(var(--padding) * 2.5) calc(var(--padding) / 1.6);
         }
     }
 }
