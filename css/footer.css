@@ -117,7 +117,15 @@
             }
             & .second_footer{
                 & .acrostic_name{
-                    text-align: left;
+                    text-align: justify;
+                    & span{
+                        font-size: calc(var(--font-size) * 0.75);
+                    }
+                }
+                & .social_name{
+                    & p{
+                        font-size: calc(var(--font-size) * 0.75);
+                    }
                 }
             }
         }

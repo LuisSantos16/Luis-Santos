@@ -41,7 +41,7 @@
     
 </head>
 <body>
-
+    <div id="inicio"></div>
     <header id="header">
         <span class="logo">
             <h2>Luis Santos</h2>
@@ -53,12 +53,12 @@
 
         <nav class="navbar" id="listaid">
             <span class="cerrar" onclick="cerrarMenu()"><i class="bi bi-x-lg"></i></span>
-            <a href="">Inicio</a>
-            <a href="">Sobre Mi</a>
-            <a href="">Especialidades</a>
-            <a href="">Portafolio</a>   
-            <a href="">Testimonios</a>
-            <a href="">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobremi">Sobre Mi</a>
+            <a href="#especialidades">Especialidades</a>
+            <a href="#portafolio">Portafolio</a>   
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
         <ul class="social-media">
             <li>
@@ -89,6 +89,7 @@
             </figcaption>
     </div>
 
+    <div id="sobremi"></div>
     <section class="container_about">
         <figure class="img_about">
             <img src="./img/luis-about.jpg" alt="">
@@ -100,10 +101,11 @@
         </div>
     </section>
 
+    <div id="especialidades"></div>
     <section class="container_skills">
         <div class="letter_skills">
-            <h2>Mis Habilidades</h2>
-            <h4>HABILIDADES</h4>
+            <h2>Mis especialidades</h2>
+            <h4>ESPECIALIDADES</h4>
         </div>
         <div class="conta-skills">
             <div class="skills">
@@ -187,6 +189,7 @@
         </div>
     </section>
 
+    <div id="portafolio"></div>
     <article class="container_portfolio">
         <div class="letter_portfolio">
             <h2>Mis Proyectos</h2>
@@ -223,6 +226,7 @@
         </div>
     </article>
 
+    <div id="testimonios"></div>
     <article class="container_testimonials">
         <div class="letter_testimonials">
             <h2>Testimonios</h2>
@@ -280,6 +284,7 @@
         </div>
     </article>
 
+    <div id="contacto"></div>
     <div class="container_form">
         <div class="letter_form">
             <h2>Formulario</h2>
@@ -320,21 +325,37 @@
                     </div>
                 </div>
                 <div class="cont-second_footer footer_navbar">
-                    <a href="">Inicio</a>
-                    <a href="">Sobre Mi</a>
-                    <a href="">Especialidades</a>
-                    <a href="">Portafolio</a>   
-                    <a href="">Testimonios</a>
-                    <a href="">Contacto</a>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobremi">Sobre Mi</a>
+                    <a href="#especialidades">Especialidades</a>
+                    <a href="#portafolio">Portafolio</a>   
+                    <a href="#testimonios">Testimonios</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </div>
             <div class="tertiary_footer">
-                <p>todos los derechos reservados a &copy; <a href="https://github.com/LuisSantos16" target="_blank">Luis Miguel Santos Rivera</a></p>
+                <p>Todos los derechos reservados a &copy; <a href="https://github.com/LuisSantos16" target="_blank">Luis Miguel Santos Rivera</a></p>
             </div>
         </div>
     </footer>
 
     <script src="./js/letra.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+                }
+            });
+            });
+    </script>
 
 </body>
 

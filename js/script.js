@@ -1,4 +1,10 @@
-
+// Elimina el fragmento de la URL sin recargar la página
+function handlePopState() {
+    history.replaceState(null, null, window.location.pathname);
+}
+    window.addEventListener('popstate', handlePopState);
+    document.addEventListener('DOMContentLoaded', handlePopState);
+    
 //menu
 let prevScrollPos = window.pageYOffset;
 
