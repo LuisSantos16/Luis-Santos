@@ -34,7 +34,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         gap: calc(var(--space-size) * 2.5);
-        max-width: 1800px;
+        max-width: 1600px;
         margin: auto;
         & .portfolio{
             width: 420px;

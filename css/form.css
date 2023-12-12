@@ -1,0 +1,70 @@
+
+.container_form{
+    background: linear-gradient(var(--bg-primary-transp_dark),var(--bg-primary-transp_dark)) ,url(../img/contacto.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: var(--padding-height) 0;
+    & .letter_form{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h2{
+            text-align: center;
+            color: var(--light-color);
+            position: absolute;
+            letter-spacing: calc(var(--space-size) / 8);
+            font-size: calc(var(--font-size) * 2.5);
+        }
+        & h4{
+            text-align: center;
+            color: var(--tertiary-color);
+            font-size: calc(var(--font-size) * 6.25);
+            -webkit-text-stroke: calc(var(--font-size) / 16) var(--bg-primary-transp);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+    & .conta_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-secondary-transp);
+        max-width: 1250px;
+        margin: auto;
+        margin-top: calc(var(--space-size) * 2.5);
+        padding: calc(var(--padding) * 2.5);
+        & input,textarea{
+            width: 100%;
+            background: none;
+            padding: calc(var(--padding) / 1.6);
+            margin: var(--space-size) 0;
+            outline: none;
+            border: calc(var(--padding) / 16) solid var(--bg-light);
+            color: var(--light-color);
+            resize: none;
+            font-family: var(--font-family);
+            &::placeholder{
+                color: var(--light-color);
+            }
+        }
+        & input[type="submit"]{
+            background-color: var(--bg-light);
+            color: var(--bg-dark);
+            cursor: pointer;
+            width: 250px;
+            border-radius: var(--border-radius_xl);
+            transition: var(--transition);
+            &:hover{
+                background-color: var(--bg-primary);
+                color: var(--light-color);
+            }
+        }
+    }
+}
+

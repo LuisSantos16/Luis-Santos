@@ -79,7 +79,7 @@
         justify-content: space-around;
         margin: calc(var(--space-size) * 2.5) 0;
         margin: auto;
-        max-width: 1900px;
+        max-width: 1800px;
         &  .skills{
             width: 450px;
             background-color: var(--bg-primary);
