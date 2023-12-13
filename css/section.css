@@ -55,6 +55,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         & h2{
             text-align: center;
             color: var(--light-color);
