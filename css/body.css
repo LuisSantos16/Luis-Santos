@@ -34,3 +34,13 @@ body{
     font-family: var(--font-family);
     background-color: var(--bg-primary);
 }
+
+.color-form{
+    color: var(--light-color);
+}
+
+@media(max-width:650px){
+    .color-form{
+        font-size: 15px;
+    }
+}
