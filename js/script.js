@@ -47,3 +47,31 @@ function Scroll(){
         header.style.boxShadow="none"
     }
 }
+
+function mostrarHoraFecha() {
+    var ahora = new Date();
+    var hora = ahora.getHours();
+    var minutos = ahora.getMinutes();
+    var segundos = ahora.getSeconds();
+    var dia = ahora.getDate();
+    var mes = ahora.getMonth() + 1; // Meses en JavaScript son de 0 a 11
+    var año = ahora.getFullYear();
+
+    // Formatea la salida con ceros a la izquierda si es necesario
+    hora = hora < 10 ? '0' + hora : hora;
+    minutos = minutos < 10 ? '0' + minutos : minutos;
+    segundos = segundos < 10 ? '0' + segundos : segundos;
+    dia = dia < 10 ? '0' + dia : dia;
+    mes = mes < 10 ? '0' + mes : mes;
+
+    var horaFechaString = `${dia}/${mes}/${año} ${hora}:${minutos}:${segundos}`;
+
+    // Actualiza el contenido del elemento con id 'horaFecha'
+    document.getElementById('horaFecha').innerHTML = horaFechaString;
+  }
+
+  // Actualiza la hora y fecha cada segundo
+  setInterval(mostrarHoraFecha, 1000);
+
+  // Muestra la hora y fecha al cargar la página
+  mostrarHoraFecha();
