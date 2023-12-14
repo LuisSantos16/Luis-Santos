@@ -15,6 +15,7 @@
     --tertiary-color:#1f2e4d;
     --light-color:#fff;
     --dark-color:#000;
+    --scroll-color:#707070;
     --font-size:1rem;
     --space-size:1rem;
     --padding:1rem;
@@ -22,25 +23,27 @@
     --font-family:'Ubuntu', sans-serif;
     --transition:0.5s;
     --border-radius_xl:3.125rem;
+    --border-radius_s:0.625rem;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-color);
+    border-radius: var(--border-radius_s);
 }
 
 body{
     font-family: var(--font-family);
     background-color: var(--bg-primary);
-}
-
-.color-form{
-    color: var(--light-color);
-}
-
-@media(max-width:650px){
-    .color-form{
-        font-size: 15px;
-    }
+   
 }

@@ -105,7 +105,7 @@
                 transform: rotate(-360deg);
             }
             & i{
-                background-color: var(--bg-dark-transp);
+                background-color: var(--bg-secondary);
                 border-radius: 50%;
                 padding: calc(var(--space-size) * 1.5);
                 display: flex;

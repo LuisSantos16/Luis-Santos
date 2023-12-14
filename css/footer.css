@@ -89,6 +89,12 @@
                 flex-direction: column;
                 align-items: center;
                 gap: calc(var(--space-size) * 2.5);
+                margin: auto;
+                & .acrostic_name{
+                   display: flex;
+                   flex-direction: column;
+                   align-items: start;
+                }
                 & .cont-second_footer{
                     gap: var(--space-size);
                     width: 100%;
@@ -116,8 +122,11 @@
                 width: 100%;
             }
             & .second_footer{
+                margin: auto;
                 & .acrostic_name{
-                    text-align: justify;
+                   display: flex;
+                   flex-direction: column;
+                   align-items: start;
                     & span{
                         font-size: calc(var(--font-size) * 0.75);
                     }
