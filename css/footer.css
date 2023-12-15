@@ -2,6 +2,8 @@
 .container_footer{
     padding: calc(var(--padding) * 5) 0 calc(var(--padding) * 2.5) 0;
     background-color: var(--bg-secondary);
+    position: relative;
+    z-index: 10000;
     & .conta_footer{
         max-width: 1800px;
         margin: auto;

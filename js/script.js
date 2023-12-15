@@ -25,7 +25,8 @@ window.onscroll = function() {
 
     if (prevScrollPos > currentScrollPos && menudespegable.classList.contains("lista-open")) {
         menudespegable.classList.add("lista-open");
-    } else {
+    } else (prevScrollPos < currentScrollPos && menudespegable.classList.contains("lista-open"))
+    {
         menudespegable.classList.remove("lista-open");
     }
 

@@ -10,12 +10,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     & figcaption{
         width: 750px;
         text-align: center;
         color: var(--light-color);
         display: grid;
         gap: calc(var(--space-size) * 1.25);
+        & h3{
+            font-size: 30px;
+        }
         & span{
             display: flex;
             align-items: center;
@@ -45,6 +49,29 @@
     }
 }
 
+.banner_social{
+    position: fixed;
+    background-color: var(--bg-quaternary);
+    top: 40%;
+    display: none;
+    flex-direction: column;
+    border-top-right-radius: calc(var(--border-radius_s) * 2);
+    border-bottom-right-radius: calc(var(--border-radius_s) * 2);
+    z-index: 1;
+    overflow: hidden;
+    & a{
+        color: var(--light-color);
+        padding: 14px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: var(--transition);
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
 @media(max-width:1200px){
     .container_banner{
         & figcaption{
@@ -54,14 +81,19 @@
             }
         }
     }
+    .banner_social{
+        display: flex;
+    }
 }
 
 @media(max-width:650px){
     .container_banner{
-        height: 80%;
         & figcaption{
             width: 90%;
-            & h3, p, a{
+            & h3{
+                font-size: 25px;
+            }
+            & p, a{
                 font-size: calc(var(--font-size) * 0.85);
             } 
             & h1{
